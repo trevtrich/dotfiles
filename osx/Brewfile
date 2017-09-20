@@ -1,86 +1,45 @@
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
-tap 'caskroom/fonts'
 tap 'caskroom/drivers'
+tap 'caskroom/versions'
 
-brew 'gpg-agent'
-brew 'gnupg2'
-cask 'keybase'
-brew 'lastpass-cli', args: ['with-pinentry', 'with-doc']
-mas 'LastPass', id: 926036361
-
-brew 'bash'
-brew 'bash-completion'
-brew 'coreutils'
-brew 'readline'
-brew 'dos2unix'
-brew 'jq'
-brew 'thefuck'
-brew 'tmate'
-brew 'tmux'
-cask 'hyper'
-
-brew 'grc'
-brew 'source-highlight'
-brew 'jp2a'
-
-brew 'wget'
-brew 'nmap'
-brew 'mtr'
-brew 'minicom'
-brew 'openssl'
-brew 'ssh-copy-id'
-brew 'corkscrew'
-cask 'pl2303'
-
-brew 'mas'
-brew 'git'
-brew 'hub'
-brew 'tig'
-cask 'p4merge'
-brew 'mercurial'
-brew 'heroku-toolbelt'
-
-brew 'nvm'
-cask 'java'
-brew 'maven'
-brew 'rbenv'
-brew 'ruby-build'
-brew 'rbenv-bundler'
-brew 'rbenv-default-gems'
-brew 'python'
-brew 'perl'
-
-cask 'chefdk'
-
-brew 'vim'
+# Development
 cask 'atom'
-cask 'macdown'
-cask 'webstorm'
-cask 'google-cloud-sdk'
-cask 'dash'
-brew 'shellcheck'
-cask 'font-source-code-pro'
-
 cask 'ccmenu'
+cask 'docker'
+brew 'git'
+cask 'intellij-idea-ce'
+cask 'java' unless system '/usr/libexec/java_home --failfast'
+cask 'macvim'
+brew 'nvm'
+cask 'postman'
+brew 'tig'
+brew 'tmux'
 
 cask 'google-chrome'
-cask 'brave'
-cask 'firefox'
-cask 'adobe-reader'
-cask 'dropbox'
-cask 'vlc'
+cask 'google-chrome-canary'
+
+# Design
+cask 'pencil'
+
+# Text Editing
 cask 'evernote'
-cask 'transmission'
-cask 'postman'
-cask 'fiddler'
-cask 'plex-media-player'
+mas 'keynote', id: 409183694
+mas 'numbers', id: 409203825
+cask 'openoffice'
+mas 'pages', id: 409201541
 
-cask 'aerial'
-cask 'caffeine'
-cask 'flux'
-
-cask 'slack'
-cask 'discord'
+# Utility Apps
+cask 'disk-inventory-x'
+cask 'dropbox'
 cask 'gitter'
+cask 'google-drive'
+mas 'LastPass', id: 926036361
+cask 'slack'
+cask 'teampaper-snap'
+cask 'spectacle'
+cask 'spotify'
+cask 'steermouse'
+brew 'tree'
+mas 'twitter', id: 409789998
