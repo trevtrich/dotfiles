@@ -4,11 +4,27 @@ tap 'homebrew/core'
 tap 'caskroom/drivers'
 tap 'caskroom/versions'
 
+# Security
+brew 'gpg-agent'
+brew 'gnupg2'
+cask 'keybase'
+brew 'lastpass-cli', args: ['with-pinentry', 'with-doc']
+mas 'LastPass', id: 926036361
+
+# Terminal
+brew 'bash'
+brew 'bash-completion'
+brew 'coreutils'
+brew 'readline'
+brew 'dos2unix'
+brew 'jq'
+
 # Development
 cask 'atom'
 cask 'ccmenu'
 cask 'docker'
 brew 'git'
+brew 'hub'
 cask 'intellij-idea-ce'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'macvim'
@@ -37,7 +53,6 @@ cask 'gitter'
 cask 'google-drive'
 mas 'LastPass', id: 926036361
 cask 'slack'
-cask 'teampaper-snap'
 cask 'spectacle'
 cask 'spotify'
 cask 'steermouse'
