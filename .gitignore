@@ -3,9 +3,6 @@ vim/.vim/bundle
 .idea
 .apm
 
-thefuck/.thefuck/**/*.pyc
-.thefuck-cache.db
-
 atom/.atom/packages/*
 atom/.atom/local-history
 atom/.atom/blob-store/
