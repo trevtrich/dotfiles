@@ -1,9 +1,0 @@
-[extensions]
-convert=
-color=
-graphlog=
-progress=
-rebase=
-mq=
-
-%include ~/.hgrc.extra
