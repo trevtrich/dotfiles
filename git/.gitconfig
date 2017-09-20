@@ -1,9 +1,10 @@
 [user]
-    name = Matt Travi
-    signingkey = C24FED70
+    name = Trevor Richardson
+    email = tr@trevorrichardson.me
+    signingkey = AA38BE9170BBF1D5
 
 [github]
-    user = travi
+    user = richardson-trevor
 
 [init]
     templatedir = ~/.git_template
@@ -57,65 +58,21 @@
     autorebase = always
 
 [alias]
-    st = status
-    rb = rebase
-    rbi = rebase -i
-    rbc = rebase --continue
-    prom = pull --rebase origin master
-    mt = mergetool
-    df = diff
-    dc = diff --cached
+    br = branch
+    cm = commit
+
+    # Delete Merged
+    dm = !git co master && git pom && git branch --merged master | grep -v master | xargs -n 1 git branch -d
+
     co = checkout
-    cb = checkout -b
-    pop = stash pop
-    amend = commit -a --amend --no-edit
-    force = push --force-with-lease
-
-    out = log --pretty=oneline --abbrev-commit --graph @{u}..
-    in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
-    undo = reset --hard
-    ignored = ls-files -o -i --exclude-standard
-
-    # Log formats
-    lg = log -20 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr by %an)%Creset' --abbrev-commit --date=relative
-    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
-    lgs = log --show-signature
-
-    # Show verbose output about tags, branches or remotes
-    tags = tag -l
-    branches = branch -a
-    remotes = remote -v
-
-    # Stage and print status
-    # Defaults to stage all, but only if nothing else is staged
-    ad = "!f() { if [ ! -z \"$1\" ] || git diff --cached --quiet; then git add -A \"$@\" && git status; else echo \"Staging prevented\"; return 8; fi }; f"
-
-    # Remove branches that have already been merged with master
-    # a.k.a. ‘delete merged’
-    dm = "!git branch -r --merged master | grep -v '\\master' | xargs -n 1 git branch -d"
-
-    # Remove branches that have missing ("gone") remote branches
-    # a.k.a. `delete missing remote`
-    dmr = "!git branch -r | awk '{print $1}' | egrep -v -f /dev/fd/0 <(git branch -vv | grep gone) | awk '{print $1}' | xargs -n 1 git branch -D"
-
-    # Clean Slate
-    cs = "!git co master && git pull --rebase --prune && git dm && git remote prune origin && git submodule update --init --recursive && git push"
-
-    # alternative to `git reset --hard` that maintains a (non-simple) way to recover the changes
-    # from http://haacked.com/archive/2014/07/28/github-flow-aliases/
+    hist = log -n 10 --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    histl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    pom = pull origin master
+    rom = !git fetch origin && git rebase origin/master
+    st = status
     wipe = !git add -A && git commit -qnm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-
-    # List contributors with number of commits
-    contributors = shortlog --summary --numbered
-
-    # edit config
-    ec = config --global -e
-
-    # what did i commit since yesterday
-    standup = log --since yesterday --author $(git config user.email) --pretty=short
-
-    aliases = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | grep -v ^'alias '
+    amend = commit -a --amend --no-edit
+    fp = push --force-with-lease
 
 [rebase]
     autosquash = true
