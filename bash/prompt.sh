@@ -87,22 +87,20 @@ function prompt_command() {
   if type update_terminal_cwd > /dev/null 2>&1; then
     PS1="$PS1$(update_terminal_cwd)"
   fi
-  # Set the title to cwd @ host
-  PS1="$PS1\[\e]0;\w @ \h\a\]"
   # git: [branch:flags]
   PS1="$PS1$(prompt_git)"
   # hg:  [branch:flags]
   PS1="$PS1$(prompt_hg)"
   # path: [user@host:path]
-  PS1="$PS1$bracket_color[$prompt_color\u${WHITE}@$prompt_color\h$colon_color:$prompt_color\w$bracket_color]${RESET}"
+  PS1="$PS1$bracket_color[$prompt_color$(basename $(dirname "$PWD"))/$(basename "$PWD")$prompt_color$bracket_color]${RESET}"
   PS1="$PS1$(prompt_virtualenv)"
 
   PS1="$PS1\n"
   # date: [HH:MM:SS]
-  PS1="$PS1$bracket_color[$(date +"$prompt_color%H$colon_color:$prompt_color%M$colon_color:$prompt_color%S")$bracket_color]\[${RESET}\]"
+  #PS1="$PS1$bracket_color[$(date +"$prompt_color%H$colon_color:$prompt_color%M$colon_color:$prompt_color%S")$bracket_color]\[${RESET}\]"
   # exit code: 127
   PS1="$PS1$(prompt_exitcode "$exit_code")"
-  PS1="$PS1 \$ "
+  PS1="$PS1\$ "
 }
 
 PROMPT_COMMAND="prompt_command"
