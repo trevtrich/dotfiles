@@ -181,7 +181,7 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 ###############################################################################
 
 # Disable two-finger swipe gestures
-defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool FALSE
+defaults write com.google.Chrome.plist AppleEnableSwipeNavigateWithScrolls -bool TRUE
 
 ###############################################################################
 # Git                                                                         #
