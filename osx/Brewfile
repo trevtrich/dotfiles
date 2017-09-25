@@ -5,6 +5,7 @@ tap 'caskroom/drivers'
 tap 'caskroom/versions'
 
 # Security
+brew 'pinentry-mac'
 brew 'gpg-agent'
 brew 'gnupg2'
 cask 'keybase'
