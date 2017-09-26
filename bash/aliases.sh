@@ -23,5 +23,8 @@ alias ccat="source-highlight --out-format=esc -o STDOUT -i"
 
 alias vim-plugins="vim +PluginInstall! +qall"
 
+#alias ctags if you used homebrew
+alias ctags="`brew --prefix`/bin/ctags"
+
 #shellcheck disable=SC1090
 . "$HOME/.files/osx/aliases.sh"

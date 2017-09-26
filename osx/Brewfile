@@ -23,6 +23,7 @@ brew 'jq'
 # Development
 cask 'atom'
 cask 'ccmenu'
+brew 'ctags'
 cask 'docker'
 brew 'git'
 brew 'hub'

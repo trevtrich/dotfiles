@@ -13,3 +13,6 @@ alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && 
 alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 alias git=hub
+
+#alias ctags if you used homebrew
+$ alias ctags="`brew --prefix`/bin/ctags"
