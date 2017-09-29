@@ -3,6 +3,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'caskroom/drivers'
 tap 'caskroom/versions'
+tap 'universal-ctags/universal-ctags'
 
 # Security
 brew 'pinentry-mac'
@@ -23,7 +24,7 @@ brew 'jq'
 # Development
 cask 'atom'
 cask 'ccmenu'
-brew 'ctags'
+brew 'universal-ctags', args: ['HEAD']
 cask 'docker'
 brew 'git'
 brew 'hub'
