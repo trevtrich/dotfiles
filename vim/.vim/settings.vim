@@ -1,5 +1,5 @@
 filetype plugin indent on
-syntax on
+syntax enable
 
 " General Config
 colorscheme icansee
