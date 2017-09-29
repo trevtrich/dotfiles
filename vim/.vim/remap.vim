@@ -4,6 +4,8 @@ nnoremap <leader>sv :source $MYVIMRC<cr>    " source the .vimrc to make changes 
 " some key remappings to improve my use
 inoremap jk <esc>
 inoremap <esc> <nop>
+
+" JS Dev Helpers
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -12,3 +14,6 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+nmap <Leader>tt :!npm run tests:unit 2> /dev/null<CR>
+nmap <Leader>ti :!npm run tests:integration 2> /dev/null<CR>
+nmap <Leader>ll  :!npm run lint:js:fix 2> /dev/null<CR><CR>
