@@ -37,6 +37,13 @@ set ignorecase                  " Ignore case of searches
 set smartcase                   " Unless a capital letter is used in the search
 set incsearch                   " Highlight dynamically as pattern is typed
 
+" Fuzzy file search
+set path+=**
+set wildmenu
+set wildignore+=**/node_modules/**
+set wildignore+=**/.git/**
+set wildignore+=**/lib/**
+
 " Syntastic setup
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
