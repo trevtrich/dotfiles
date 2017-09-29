@@ -2,8 +2,7 @@ filetype plugin indent on
 syntax enable
 
 " General Config
-colorscheme icansee
-set background=dark
+colorscheme onedark
 set guifont=Source\ Code\ Pro
 set autoindent
 set ruler
@@ -30,7 +29,8 @@ set fileformat=unix             " default file format
 set nonu                        " Turn off line numbering
 set lbr                         " Wrap text
 set cursorline                  " Highlight current line
-hi CursorLine term=underline cterm=underline gui=underline guibg=Black ctermbg=Black
+hi CursorLine cterm=bold ctermbg=237 guibg=#3a3a3a
+hi Visual cterm=bold ctermbg=244 guibg=#3a3a3a
 
 set hlsearch                    " Highlight searches
 set ignorecase                  " Ignore case of searches

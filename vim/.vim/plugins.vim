@@ -14,6 +14,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'joshdick/onedark.vim'
 Plugin 'editorconfig-vim'
 Plugin 'vim-scripts/PreserveNoEOL'
 Plugin 'rodjek/vim-puppet'
