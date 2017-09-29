@@ -36,3 +36,14 @@ set hlsearch                    " Highlight searches
 set ignorecase                  " Ignore case of searches
 set smartcase                   " Unless a capital letter is used in the search
 set incsearch                   " Highlight dynamically as pattern is typed
+
+" Syntastic setup
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
