@@ -6,6 +6,7 @@ inoremap jk <esc>
 inoremap <esc> <nop>
 
 " JS Dev Helpers
+nmap <Leader>rt :!ctags -R --exclude=.git --exclude=lib --exclude=node_modules . 2> /dev/null<CR>
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
