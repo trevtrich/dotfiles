@@ -17,13 +17,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'editorconfig-vim'
 Plugin 'vim-scripts/PreserveNoEOL'
-Plugin 'rodjek/vim-puppet'
-Plugin 'markcornick/vim-vagrant'
 Plugin 'godlygeek/tabular'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
