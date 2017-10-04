@@ -44,6 +44,9 @@ set wildignore+=**/node_modules/**
 set wildignore+=**/.git/**
 set wildignore+=**/lib/**
 
+" JSX plugin setup
+let g:jsx_ext_required = 0
+
 " Syntastic setup
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

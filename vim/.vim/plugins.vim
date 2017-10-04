@@ -17,11 +17,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'editorconfig-vim'
-Plugin 'vim-scripts/PreserveNoEOL'
-Plugin 'godlygeek/tabular'
-Plugin 'vim-scripts/closetag.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 Plugin 'vim-syntastic/syntastic'
-Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
