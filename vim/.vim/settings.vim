@@ -44,6 +44,10 @@ set wildignore+=**/node_modules/**
 set wildignore+=**/.git/**
 set wildignore+=**/lib/**
 
+" JS autocompletion
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+
 " JSX plugin setup
 let g:jsx_ext_required = 0
 

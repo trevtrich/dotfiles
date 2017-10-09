@@ -8,3 +8,4 @@ null/
 .DS_Store
 *.log
 tags
+.tern-project
