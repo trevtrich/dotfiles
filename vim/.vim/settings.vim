@@ -38,11 +38,13 @@ set smartcase                   " Unless a capital letter is used in the search
 set incsearch                   " Highlight dynamically as pattern is typed
 
 " Fuzzy file search
-set path+=**
+set path=$PWD/**
+set wildignore+=*/node_modules/*
+set wildignore+=*/.git/*
+set wildignore+=*/lib/*
+set wildignore+=*.swp
+set wildignore+=*/coverage/*
 set wildmenu
-set wildignore+=**/node_modules/**
-set wildignore+=**/.git/**
-set wildignore+=**/lib/**
 
 " JS autocompletion
 set omnifunc=syntaxcomplete#Complete
