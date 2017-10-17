@@ -16,7 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'editorconfig-vim'
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'vim-syntastic/syntastic'
