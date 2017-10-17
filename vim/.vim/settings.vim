@@ -5,6 +5,7 @@ syntax enable
 colorscheme onedark
 set guifont=Source\ Code\ Pro
 set autoindent
+set nowrap
 set ruler
 set visualbell
 set showcmd
@@ -27,7 +28,6 @@ set fileformats=unix,dos,mac    " support all three, in this order
 set fileformat=unix             " default file format
 
 set nonu                        " Turn off line numbering
-set lbr                         " Wrap text
 set cursorline                  " Highlight current line
 hi CursorLine cterm=bold ctermbg=237 guibg=#3a3a3a
 hi Visual cterm=bold ctermbg=244 guibg=#3a3a3a
