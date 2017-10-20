@@ -10,9 +10,7 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 
 " File browsing
-"nmap bo :browse oldfiles<CR>
-nmap <Leader>ft :tab sfind<Space>
-nmap <Leader>ff :find<Space>
+nmap <Leader>ff :CtrlP<CR>
 
 " General dev helpers
 nmap <Leader>rr :YcmCompleter RefactorRename<Space>
