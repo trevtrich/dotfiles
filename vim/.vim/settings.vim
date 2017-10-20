@@ -46,6 +46,7 @@ set wildignore+=*/.git/*
 set wildignore+=*/lib/*
 set wildignore+=*.swp
 set wildignore+=*/coverage/*
+set wildignore+=*/tags/*
 set wildmenu
 
 " JS autocompletion
