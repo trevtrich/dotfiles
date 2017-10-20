@@ -9,3 +9,5 @@ null/
 *.log
 tags
 .tern-project
+*.swp
+*.swo
