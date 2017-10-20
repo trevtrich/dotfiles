@@ -3,7 +3,7 @@
 bracket_color="\[${WHITE}\]"
 colon_color="\[${WHITE}\]"
 
-prompt_color="\[${GREEN}\]"
+prompt_color="\[${TARHEEL}\]"
 
 if [[ "$SSH_TTY" ]]; then
   # connected via ssh
