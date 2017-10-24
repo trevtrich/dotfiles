@@ -41,12 +41,12 @@ set colorcolumn=120
 
 " Fuzzy file search
 set path=$PWD/**
-set wildignore+=*/node_modules/*
-set wildignore+=*/.git/*
-set wildignore+=*/lib/*
+set wildignore+=node_modules/**
+set wildignore+=.git/**
+set wildignore+=lib/**
 set wildignore+=*.swp
-set wildignore+=*/coverage/*
-set wildignore+=*/tags/*
+set wildignore+=coverage/**
+set wildignore+=tags
 set wildmenu
 
 " JS autocompletion
