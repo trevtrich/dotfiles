@@ -15,4 +15,8 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 alias git=hub
 
 #alias ctags if you used homebrew
-$ alias ctags="`brew --prefix`/bin/ctags"
+alias ctags="`brew --prefix`/bin/ctags"
+
+# Helpers for navigation
+alias gain="cd /Users/trevorr/Development/Gain"
+alias home="cd /Users/trevorr/Development/Home"
