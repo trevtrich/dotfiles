@@ -2,6 +2,8 @@ filetype plugin indent on
 syntax enable
 
 " General Config
+set autowrite
+set autoread
 colorscheme onedark
 set guifont=Source\ Code\ Pro
 set autoindent
