@@ -14,7 +14,7 @@ nmap <Leader>ff :CtrlP<CR>
 
 " Grep Stuff "
 " grep global
-nmap <Leader>sg :vimgrep //gj **/*<Left><Left><Left><Left><Left><Left><Left><Left>
+nmap <Leader>sg :noautocmd vimgrep //gj src/** test/**<Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left><Left>
 " search and replace in files found for grep global with confirmation
 nmap <Leader>sr :cfdo %s///gc<Left><Left><Left><Left>
 
