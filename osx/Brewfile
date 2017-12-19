@@ -7,6 +7,7 @@ tap 'universal-ctags/universal-ctags'
 
 # Security
 cask 'authy'
+cask 'private-internet-access'
 brew 'pinentry-mac'
 brew 'gpg-agent'
 brew 'gnupg2'
