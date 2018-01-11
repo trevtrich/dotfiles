@@ -41,6 +41,7 @@ brew 'tmux'
 brew 'reattach-to-user-namespace'
 
 cask 'google-chrome'
+cask 'brave'
 
 # Design
 cask 'pencil'
