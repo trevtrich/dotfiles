@@ -41,7 +41,6 @@ brew 'tmux'
 brew 'reattach-to-user-namespace'
 
 cask 'google-chrome'
-cask 'google-chrome-canary'
 
 # Design
 cask 'pencil'
@@ -61,8 +60,6 @@ cask 'google-drive'
 mas 'LastPass', id: 926036361
 brew 'lastpass-cli'
 cask 'slack-beta'
-cask 'spectacle'
 cask 'spotify'
-cask 'steermouse'
 brew 'tree'
 mas 'twitter', id: 409789998
