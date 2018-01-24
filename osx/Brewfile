@@ -22,6 +22,7 @@ brew 'coreutils'
 brew 'readline'
 brew 'dos2unix'
 brew 'jq'
+brew 'unar'
 
 # Development
 cask 'atom'
@@ -64,3 +65,4 @@ cask 'slack-beta'
 cask 'spotify'
 brew 'tree'
 mas 'twitter', id: 409789998
+cask 'the-unarchiver'
