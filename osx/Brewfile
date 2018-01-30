@@ -27,19 +27,19 @@ brew 'unar'
 # Development
 cask 'atom'
 cask 'ccmenu'
-brew 'universal-ctags', args: ['HEAD']
 cask 'docker'
 brew 'git'
 brew 'hub'
-cask 'p4merge'
 cask 'intellij-idea-ce'
 cask 'java' unless system '/usr/libexec/java_home --failfast'
 cask 'macvim'
 brew 'nvm'
 cask 'postman'
+cask 'p4merge'
+brew 'reattach-to-user-namespace'
 brew 'tig'
 brew 'tmux'
-brew 'reattach-to-user-namespace'
+brew 'universal-ctags', args: ['HEAD']
 
 cask 'google-chrome'
 cask 'brave'
