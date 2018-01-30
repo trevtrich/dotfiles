@@ -20,9 +20,10 @@ mas 'LastPass', id: 926036361
 brew 'bash'
 brew 'bash-completion'
 brew 'coreutils'
-brew 'readline'
 brew 'dos2unix'
+brew 'fzy'
 brew 'jq'
+brew 'readline'
 brew 'unar'
 
 # Development
