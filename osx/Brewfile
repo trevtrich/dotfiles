@@ -54,7 +54,6 @@ cask 'pencil'
 cask 'evernote'
 mas 'keynote', id: 409183694
 mas 'numbers', id: 409203825
-cask 'openoffice'
 mas 'pages', id: 409201541
 
 # Utility Apps
