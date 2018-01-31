@@ -28,6 +28,7 @@ gpg/.gnupg/*
 nvm/.nvm/*
 !nvm/.nvm/default-packages
 !nvm/.nvm/alias/
+nvm/.nvm/alias/*
 !nvm/.nvm/alias/default
 
 code/webstorm/preferences/webstorm120.key
