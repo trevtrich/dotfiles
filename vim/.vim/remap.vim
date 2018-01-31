@@ -20,7 +20,7 @@ nmap <Leader>sr :cfdo %s///gc<Left><Left><Left><Left>
 
 " General dev helpers
 nmap <Leader>rr :YcmCompleter RefactorRename<Space>
-nmap <Leader>gt :YcmCompleter GoTo<CR>
+nmap <Leader>gt :YcmCompleter GetType<CR>
 nmap <Leader>gd :YcmCompleter GoToDefinition<CR>
 nmap <Leader>gr :YcmCompleter GoToReferences<CR>
 
