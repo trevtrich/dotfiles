@@ -19,6 +19,7 @@ alias reload='exec -l $SHELL'
 
 alias ccat="source-highlight --out-format=esc -o STDOUT -i"
 
+alias vim="mvim -v"
 
 #alias ctags if you used homebrew
 alias ctags="`brew --prefix`/bin/ctags"
