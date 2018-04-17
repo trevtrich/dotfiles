@@ -1,0 +1,19 @@
+# General
+imap jk <esc>
+set visualbell
+set noerrorbells
+
+# Refactor
+nmap <leader>rr :action RenameElement<CR>
+vmap <leader>ev :action IntroduceVariable<CR>
+vmap <leader>em :action ExtractMethod<CR>
+
+# Testing
+nmap <leader>tt :action Run<CR>
+
+# GoTo
+nmap <leader>gu :action ShowUsages<CR>
+nmap <leader>gd :action GotoDeclaration<CR>
+nmap <leader>gi :action GotoImplementation<CR>
+nmap <leader>ff :action GotoFile<CR>
+nmap <leader>sg :action FindInPath<CR>
