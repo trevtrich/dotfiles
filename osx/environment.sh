@@ -113,7 +113,7 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 /usr/bin/defaults -currentHost write -g 'com.apple.keyboard.modifiermapping.1452-544-0' -array '<dict><key>HIDKeyboardModifierMappingDst</key><integer>-1</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
 
 # Speed up the keyboard movement
-defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 ###############################################################################
