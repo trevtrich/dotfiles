@@ -33,7 +33,7 @@ cask 'docker'
 brew 'fac'
 brew 'git'
 brew 'hub'
-cask 'macvim'
+brew 'macvim', args: ['with-override-system-vim']
 brew 'nvm'
 cask 'postman'
 cask 'p4merge'
@@ -63,6 +63,7 @@ mas 'LastPass', id: 926036361
 brew 'lastpass-cli'
 cask 'slack-beta'
 cask 'spotify'
+brew 'task'
 brew 'tree'
 mas 'twitter', id: 409789998
 cask 'the-unarchiver'
