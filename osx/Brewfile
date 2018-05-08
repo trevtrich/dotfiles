@@ -17,6 +17,7 @@ brew 'lastpass-cli', args: ['with-pinentry', 'with-doc']
 mas 'LastPass', id: 926036361
 
 # Terminal
+brew 'ack'
 brew 'bash'
 brew 'bash-completion'
 brew 'coreutils'
@@ -49,7 +50,6 @@ cask 'brave'
 cask 'pencil'
 
 # Text Editing
-cask 'evernote'
 mas 'keynote', id: 409183694
 mas 'numbers', id: 409203825
 mas 'pages', id: 409201541
@@ -65,5 +65,4 @@ cask 'slack-beta'
 cask 'spotify'
 brew 'task'
 brew 'tree'
-mas 'twitter', id: 409789998
 cask 'the-unarchiver'
