@@ -11,3 +11,5 @@ tags
 .tern-project
 *.swp
 *.swo
+.vimlocal
+.ackrc
