@@ -2,6 +2,7 @@ filetype plugin indent on
 syntax enable
 
 " General Config
+set updatetime=100
 set autowrite
 set autoread
 colorscheme onedark
