@@ -57,6 +57,7 @@ mas 'pages', id: 409201541
 # Utility Apps
 cask 'disk-inventory-x'
 cask 'dropbox'
+brew 'fzf'
 cask 'gitter'
 cask 'google-drive'
 mas 'LastPass', id: 926036361

@@ -28,5 +28,8 @@ if which npm > /dev/null 2>&1; then
     source <(npm completion)
 fi
 
+# global fuzzy completion
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 #shellcheck disable=SC1090
 . ~/.files/osx/completion.sh
