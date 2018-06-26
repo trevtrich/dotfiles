@@ -17,6 +17,9 @@ alias git=hub
 #alias ctags if you used homebrew
 alias ctags="`brew --prefix`/bin/ctags"
 
+# By default use macvim inside terminal
+alias vim="mvim -v"
+
 # Helpers for navigation
-alias gain="cd /Users/trevorr/Development/Gain"
+alias gaind="cd /Users/trevorr/Development/Gain"
 alias home="cd /Users/trevorr/Development/Home"
