@@ -13,3 +13,4 @@ tags
 *.swo
 .vimlocal
 .ackrc
+compile_commands.json
