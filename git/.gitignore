@@ -14,3 +14,4 @@ tags
 .vimlocal
 .ackrc
 compile_commands.json
+jsconfig.json
