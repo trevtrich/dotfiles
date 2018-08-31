@@ -1,6 +1,11 @@
 set bell-style off
 set editing-mode vi
 
+$if mode=vi
+    set keymap vi-insert
+    "jk":vi-movement-mode
+$endif
+
 #Override the low (40) limit set by git-bash
 set completion-query-items 100
 
