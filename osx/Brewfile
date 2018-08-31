@@ -29,6 +29,7 @@ brew 'dos2unix'
 brew 'fzy'
 brew 'jq'
 brew 'readline'
+brew 'tldr'
 brew 'unar'
 
 # Development
