@@ -67,6 +67,7 @@ cask 'gitter'
 cask 'google-drive'
 mas 'LastPass', id: 926036361
 brew 'lastpass-cli'
+mas 'monosnap-screenshot-editor', id: 540348655
 cask 'slack-beta'
 cask 'spotify'
 brew 'task'
