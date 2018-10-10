@@ -3,6 +3,12 @@ imap jk <esc>
 set visualbell
 set noerrorbells
 
+# Window
+map <C-t> :action ActivateRunToolWindow<CR>
+
+# Git
+nmap <leader>hu :action Vcs.RollbackChangedLines<CR>
+
 # Refactor
 nmap <leader>rr :action RenameElement<CR>
 vmap <leader>ev :action IntroduceVariable<CR>
