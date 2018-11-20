@@ -53,10 +53,6 @@ set wildignore+=*.swp
 set wildignore+=tags
 set wildmenu
 
-" JS autocompletion
-set omnifunc=syntaxcomplete#Complete
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-
 " JSX plugin setup
 let g:jsx_ext_required = 0
 
