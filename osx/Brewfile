@@ -51,7 +51,7 @@ brew 'tmux'
 brew 'universal-ctags', args: ['HEAD']
 
 cask 'google-chrome'
-cask 'brave'
+cask 'brave-browser'
 
 # Design
 cask 'pencil'
