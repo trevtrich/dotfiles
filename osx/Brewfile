@@ -7,6 +7,9 @@ tap 'caskroom/versions'
 tap 'universal-ctags/universal-ctags'
 tap 'mkchoi212/fac'
 
+# Cool System Stuff
+cask 'aerial' # Screensaver videos
+
 # Fonts
 cask 'font-source-code-pro'
 
