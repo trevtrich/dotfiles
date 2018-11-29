@@ -26,6 +26,7 @@ mas 'LastPass', id: 926036361
 brew 'ack'
 brew 'bash'
 brew 'bash-completion'
+brew 'bat'
 brew 'coreutils'
 brew 'dos2unix'
 brew 'fzy'
