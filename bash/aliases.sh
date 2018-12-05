@@ -18,6 +18,7 @@ alias hosts='sudo $EDITOR /etc/hosts'
 alias reload='exec -l $SHELL'
 
 alias ccat="source-highlight --out-format=esc -o STDOUT -i"
+alias cat="bat"
 
 alias vim="mvim -v"
 alias editCommit="vim /Users/trevorr/Library/Caches/commitizen/commitizen.json"
