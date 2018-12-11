@@ -30,7 +30,6 @@ if [ -e ~/.files.extra/osx/Brewfile ]; then
 fi
 brew upgrade
 brew cleanup
-brew cask cleanup
 
 if [[ ! -d ~/.nvm ]]; then
     heading "Finishing nvm configuration"
