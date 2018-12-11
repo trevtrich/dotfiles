@@ -42,7 +42,6 @@ cask 'docker'
 brew 'fac'
 brew 'git'
 brew 'hub'
-brew 'macvim', args: ['with-override-system-vim']
 brew 'nvm'
 cask 'postman'
 cask 'p4merge'
