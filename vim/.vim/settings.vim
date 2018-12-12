@@ -13,6 +13,9 @@ set ruler
 set visualbell
 set showcmd
 
+" Netrw to display a tree by default (switcher using `i` in netrw)
+let g:netrw_liststyle=3
+
 set scrolloff=10                " Start scrolling this number of lines from top/bottom
 
 set smarttab                    " Make Tab work fine with spaces
@@ -52,20 +55,3 @@ set wildignore+=*/coverage/**
 set wildignore+=*.swp
 set wildignore+=tags
 set wildmenu
-
-" JSX plugin setup
-let g:jsx_ext_required = 0
-
-let g:ale_fixers = {'javascript': ['eslint']}
-let g:ale_fix_on_save = 1
-
-" Syntastic setup
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 0
-"let g:syntastic_check_on_wq = 1
-"let g:syntastic_javascript_checkers = ['eslint']
-"let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'

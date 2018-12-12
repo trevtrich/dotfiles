@@ -23,14 +23,13 @@ fi
 heading 'Brew bundle'
 brew update
 brew prune
-brew doctor || exit 1
+env PATH=${PATH//$(pyenv root)\/shims:/} brew doctor || exit 1 # Make brew play nicely with pyenv
 brew bundle --file=~/.files/osx/Brewfile
 if [ -e ~/.files.extra/osx/Brewfile ]; then
    brew bundle --file=~/.files.extra/osx/Brewfile
 fi
 brew upgrade
 brew cleanup
-brew cask cleanup
 
 if [[ ! -d ~/.nvm ]]; then
     heading "Finishing nvm configuration"
