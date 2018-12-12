@@ -2,6 +2,7 @@ nnoremap <leader>ev :vsplit $MYVIMRC<cr>    " edit the .vimrc in a split pane
 nnoremap <leader>sv :source $MYVIMRC<cr>    " source the .vimrc to make changes take effect in current session
 
 " global remappings to improve my use
+nmap <Leader>E :Explore<CR>
 inoremap jk <esc>
 inoremap <esc> <nop>
 nnoremap <up> <nop>
