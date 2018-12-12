@@ -24,5 +24,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-surround'
 
+source ~/.files.extra/vim/.vim/plugins.vim
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
