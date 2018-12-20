@@ -3,6 +3,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>    " source the .vimrc to make changes 
 
 " global remappings to improve my use
 nmap <Leader>E :Explore<CR>
+nmap <Leader>to :tabonly<CR>
 inoremap jk <esc>
 inoremap <esc> <nop>
 nnoremap <up> <nop>
