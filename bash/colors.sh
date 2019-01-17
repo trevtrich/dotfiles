@@ -34,6 +34,7 @@ if tput setaf 1 &> /dev/null && [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
     CYAN=$(tput setaf 37);
     TARHEEL=$(tput setaf 39);
     GREEN=$(tput setaf 64);
+    GREY_LIGHT=$(tput setaf 243);
     ORANGE=$(tput setaf 166);
     PURPLE=$(tput setaf 125);
     RED=$(tput setaf 124);
@@ -49,6 +50,7 @@ else
     CYAN="\033[1;36m";
     TARHEEL="\033[1;39m";
     GREEN="\033[0;32m";
+    GREY_LIGHT="\033[0;37m";
     ORANGE="\033[0;2;33m";
     PURPLE="\033[1;35m";
     RED="\033[1;31m";

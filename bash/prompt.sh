@@ -38,7 +38,7 @@ function prompt_git() {
   if [[ "$flags" ]]; then
     output="$output$colon_color:$prompt_color$flags"
   fi
-  echo "$bracket_color[$YELLOW$output$bracket_color]${RESET}"
+  echo "$bracket_color[$GREY_LIGHT$output$bracket_color]${RESET}"
 }
 
 function prompt_hg() {
