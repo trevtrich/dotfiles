@@ -11,6 +11,8 @@ tags
 .tern-project
 *.swp
 *.swo
+*.swn
+*.swm
 .vimlocal
 .ackrc
 compile_commands.json
