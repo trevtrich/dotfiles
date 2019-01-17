@@ -66,6 +66,7 @@ cask 'disk-inventory-x'
 cask 'dropbox'
 brew 'fzf'
 cask 'gitter'
+cask 'google-backup-and-sync'
 cask 'google-drive'
 mas 'LastPass', id: 926036361
 brew 'lastpass-cli'
