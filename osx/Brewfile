@@ -34,6 +34,7 @@ brew 'jq'
 brew 'readline'
 brew 'tldr'
 brew 'unar'
+brew 'vim'
 
 # Development
 cask 'atom'
@@ -71,7 +72,7 @@ cask 'google-drive'
 mas 'LastPass', id: 926036361
 brew 'lastpass-cli'
 mas 'monosnap-screenshot-editor', id: 540348655
-cask 'slack-beta'
+cask 'slack'
 cask 'spotify'
 brew 'task'
 brew 'tree'
