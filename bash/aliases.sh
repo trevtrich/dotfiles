@@ -29,3 +29,7 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 #shellcheck disable=SC1090
 . "$HOME/.files/osx/aliases.sh"
+
+if [ -f $HOME/.files.extra/bash/aliases.sh ]; then
+    . "$HOME/.files.extra/bash/aliases.sh"
+fi
