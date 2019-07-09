@@ -19,6 +19,8 @@ nmap <Leader>ff :CtrlP<CR>
 nmap <Leader>sg :Ack<Space>--sort-files<Space>
 " search and replace in files found for grep global with confirmation
 nmap <Leader>sr :cfdo %s///gc<Left><Left><Left><Left>
+nnoremap ]q :cnext<cr>
+nnoremap [q :cprevious<cr>
 
 " General dev helpers
 nmap <Leader>rr :YcmCompleter RefactorRename<Space>
