@@ -48,6 +48,7 @@ set smartcase                   " Unless a capital letter is used in the search
 set incsearch                   " Highlight dynamically as pattern is typed
 
 set colorcolumn=120
+highlight ColorColumn ctermbg=39
 
 " Fuzzy file search
 set path=$PWD/**
