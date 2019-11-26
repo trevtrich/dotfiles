@@ -55,6 +55,7 @@ brew 'universal-ctags', args: ['HEAD']
 
 cask 'google-chrome'
 cask 'brave-browser'
+cask 'firefox'
 
 # Design
 cask 'pencil'
