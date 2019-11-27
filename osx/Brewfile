@@ -48,7 +48,6 @@ brew 'nvm'
 cask 'postman'
 cask 'p4merge'
 brew 'python'
-brew 'reattach-to-user-namespace'
 brew 'tig'
 brew 'tmux'
 brew 'universal-ctags', args: ['HEAD']
