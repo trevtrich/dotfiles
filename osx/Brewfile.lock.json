@@ -14,13 +14,16 @@
         "revision": "fa725d59e23f22e371e6c0ba0eab67b43cb59d72"
       },
       "caskroom/drivers": {
-        "revision": "2f722d016e057a8bc01ebe58149759adbde3983f"
+        "revision": "6b44ba1c1382039c77a3d3b78586081c33106d7b"
       },
       "universal-ctags/universal-ctags": {
         "revision": "a63986ba838043d651d09e3ab6de70388eeaf876"
       },
       "mkchoi212/fac": {
         "revision": "b1d27a166d0f5abea837d68025eda9419ae962d8"
+      },
+      "homebrew/cask": {
+        "revision": "223191e5bbb9dde598cdacf07fa6c24f5c7ef1f7"
       }
     },
     "cask": {
@@ -31,13 +34,13 @@
         "version": "2.030R-ro-1.050R-it"
       },
       "authy": {
-        "version": "1.2.0"
+        "version": "1.1.0"
       },
       "private-internet-access": {
-        "version": "1.0.1-02349"
+        "version": "1.0.2-02363"
       },
       "keybase": {
-        "version": "1.0.30-20170915193210,8c3c799f2"
+        "version": "1.0.21-20170413194119,9dea6e1"
       },
       "atom": {
         "version": "1.16.0"
@@ -55,7 +58,7 @@
         "version": "latest"
       },
       "p4merge": {
-        "version": "2017.2-1573260"
+        "version": "2018.2-1661700"
       },
       "google-chrome": {
         "version": "latest"
@@ -64,7 +67,7 @@
         "version": "0.55.22"
       },
       "firefox": {
-        "version": "68.0.1"
+        "version": "68.0.2"
       },
       "pencil": {
         "version": "3.1.0.ga"
@@ -85,7 +88,7 @@
         "version": "latest"
       },
       "slack": {
-        "version": "4.1.2"
+        "version": "3.3.7"
       },
       "spotify": {
         "version": "latest"
@@ -133,26 +136,22 @@
         }
       },
       "gnupg": {
-        "version": "2.2.17",
+        "version": "2.2.18",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.17.catalina.bottle.tar.gz",
-              "sha256": "4d6dcc2800fd42235849fec27fe13843abbe0f6a35dc1a33c8477325ecd10037"
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.18.catalina.bottle.tar.gz",
+              "sha256": "f917eab1b8680aaec7f565917b168ff5cf085476ccd1a32db5961b27ca98d376"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.17.mojave.bottle.tar.gz",
-              "sha256": "1644ab52baf4e89ad3eb5423e67bef8f316edb02dac68879a92a72515b8de594"
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.18.mojave.bottle.tar.gz",
+              "sha256": "b65d87ac6cb5dc10de6f4afa7e33ca79c146b5a2a35ad8455ac01eeddc9e82f5"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.17.high_sierra.bottle.tar.gz",
-              "sha256": "131b7346fb893388dac5db6d20943a6f2a03f123568fa8495a4faeb354a7b394"
-            },
-            "sierra": {
-              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.17.sierra.bottle.tar.gz",
-              "sha256": "ffb619c7cd3b5e9cd11444b17eea2e2b0d63da2f8cc3d2fbd3a1d834ff428a8b"
+              "url": "https://homebrew.bintray.com/bottles/gnupg-2.2.18.high_sierra.bottle.tar.gz",
+              "sha256": "b3ba15bfd670a472ec9b2ddbf65b3d05c2d9802089afeee8a129a5eb470dcaea"
             }
           }
         }
@@ -627,7 +626,7 @@
         }
       },
       "universal-ctags": {
-        "version": "HEAD-ccac4df",
+        "version": "HEAD-e1bc2a3",
         "bottle": false,
         "options": {
           "args": [
@@ -717,6 +716,69 @@
             }
           }
         }
+      },
+      "ruby": {
+        "version": "2.6.5",
+        "bottle": {
+          "cellar": "/usr/local/Cellar",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/ruby-2.6.5.catalina.bottle.1.tar.gz",
+              "sha256": "74304ae76b81629a80edb0655c34883b00ab674fa10e0db4bd5336015acc5e17"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/ruby-2.6.5.mojave.bottle.1.tar.gz",
+              "sha256": "da318a12d35502d95a8bea49f735bb74af72cdb38b687b2f565d75b139941736"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/ruby-2.6.5.high_sierra.bottle.1.tar.gz",
+              "sha256": "9416860e0cd56aa45bfce03801a81eefcb0a25e0ccb123a82c51f5f1b6911abb"
+            }
+          }
+        }
+      },
+      "cmake": {
+        "version": "3.15.5",
+        "bottle": {
+          "cellar": ":any_skip_relocation",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/cmake-3.15.5.catalina.bottle.tar.gz",
+              "sha256": "46b47f448f7690bbed70526a42f27bea54aa7562c9eefb86955102fc83d1366d"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/cmake-3.15.5.mojave.bottle.tar.gz",
+              "sha256": "ded337f539d87466a83e50c4dee5ccd47356a3a4bc066a0cadbf4c8fc52c7179"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/cmake-3.15.5.high_sierra.bottle.tar.gz",
+              "sha256": "e98220aa1eedd7e97926e160c76424cdb08ea5cfc6866ca65cd25a830605586d"
+            }
+          }
+        }
+      },
+      "tmate": {
+        "version": "2.4.0",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/tmate-2.4.0.catalina.bottle.tar.gz",
+              "sha256": "a278bcb401068bed2434ec48bfb059a86d793a6daa4877574ac0ed7168cb1ebc"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/tmate-2.4.0.mojave.bottle.tar.gz",
+              "sha256": "7e5158460b898422b4c6e84390d0e8446e2ad52789a30f9942288c5c32acc8a1"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/tmate-2.4.0.high_sierra.bottle.tar.gz",
+              "sha256": "0f4f06d0ab7715adc7f6d33cf7d3c08fd057e7f038a666b360ac4ad6a3449ad9"
+            }
+          }
+        }
       }
     },
     "mas": {
@@ -733,9 +795,9 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.1.16-141-ga4d7bb6",
+        "HOMEBREW_VERSION": "2.2.0-14-gb89ec55",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "38d1094d71e2e90ee3734d275590104a9e58270f",
+        "Homebrew/homebrew-core": "6807fd8cb8d55e57e22c3b92a8ba2e41fcd54345",
         "CLT": "",
         "Xcode": "11.2.1",
         "macOS": "10.15.1"
