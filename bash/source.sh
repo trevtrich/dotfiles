@@ -16,8 +16,6 @@
 . ~/.files/git/functions.sh
 #shellcheck disable=SC1090
 . ~/.files/ruby/rbenv-init.sh
-#shellcheck disable=SC1090
-. ~/.files/python/python-init.sh
 
 #shellcheck disable=SC1090
 . ~/.files/bash/prompt.sh
@@ -26,6 +24,3 @@
 . ~/.files/osx/source.sh
 #shellcheck disable=SC1090
 . ~/.files/windows/source.sh
-
-#shellcheck disable=SC1090
-[ -f ~/.travis/travis.sh ] && . ~/.travis/travis.sh

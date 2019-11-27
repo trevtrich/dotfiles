@@ -1,4 +1,5 @@
 .idea/
+.clangd
 *.iml
 */pyc
 *.orig
