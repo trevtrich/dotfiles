@@ -14,7 +14,7 @@
         "revision": "fa725d59e23f22e371e6c0ba0eab67b43cb59d72"
       },
       "caskroom/drivers": {
-        "revision": "6b44ba1c1382039c77a3d3b78586081c33106d7b"
+        "revision": "3e96c04983464a56e76f32c3eaa1aaaf00e112a9"
       },
       "universal-ctags/universal-ctags": {
         "revision": "a63986ba838043d651d09e3ab6de70388eeaf876"
@@ -23,7 +23,7 @@
         "revision": "b1d27a166d0f5abea837d68025eda9419ae962d8"
       },
       "homebrew/cask": {
-        "revision": "223191e5bbb9dde598cdacf07fa6c24f5c7ef1f7"
+        "revision": "273fe6e314114b564066873fc8ccd09181c6a988"
       }
     },
     "cask": {
@@ -34,13 +34,13 @@
         "version": "2.030R-ro-1.050R-it"
       },
       "authy": {
-        "version": "1.1.0"
+        "version": "1.2.0"
       },
       "private-internet-access": {
-        "version": "1.0.2-02363"
+        "version": "1.0.1-02349"
       },
       "keybase": {
-        "version": "1.0.21-20170413194119,9dea6e1"
+        "version": "1.0.30-20170915193210,8c3c799f2"
       },
       "atom": {
         "version": "1.16.0"
@@ -58,7 +58,7 @@
         "version": "latest"
       },
       "p4merge": {
-        "version": "2018.2-1661700"
+        "version": "2017.2-1573260"
       },
       "google-chrome": {
         "version": "latest"
@@ -67,7 +67,7 @@
         "version": "0.55.22"
       },
       "firefox": {
-        "version": "68.0.2"
+        "version": "68.0.1"
       },
       "pencil": {
         "version": "3.1.0.ga"
@@ -88,7 +88,7 @@
         "version": "latest"
       },
       "slack": {
-        "version": "3.3.7"
+        "version": "4.1.2"
       },
       "spotify": {
         "version": "latest"
@@ -626,7 +626,7 @@
         }
       },
       "universal-ctags": {
-        "version": "HEAD-e1bc2a3",
+        "version": "HEAD-ccac4df",
         "bottle": false,
         "options": {
           "args": [
@@ -795,9 +795,9 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.0-14-gb89ec55",
+        "HOMEBREW_VERSION": "2.2.0-24-gf989295",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "6807fd8cb8d55e57e22c3b92a8ba2e41fcd54345",
+        "Homebrew/homebrew-core": "a6e8244aaec01063f603510754405425486ead1e",
         "CLT": "",
         "Xcode": "11.2.1",
         "macOS": "10.15.1"

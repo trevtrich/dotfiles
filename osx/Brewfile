@@ -38,7 +38,6 @@ brew 'vim'
 # Development
 cask 'atom'
 cask 'ccmenu'
-brew 'cmake'
 cask 'docker'
 brew 'fac'
 brew 'git'
