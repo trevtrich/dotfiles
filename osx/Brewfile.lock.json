@@ -23,7 +23,7 @@
         "revision": "b1d27a166d0f5abea837d68025eda9419ae962d8"
       },
       "homebrew/cask": {
-        "revision": "273fe6e314114b564066873fc8ccd09181c6a988"
+        "revision": "6127054c1f8df680f5fa37bae3126e6e610e5ffc"
       }
     },
     "cask": {
@@ -779,6 +779,68 @@
             }
           }
         }
+      },
+      "rbenv": {
+        "version": "1.1.2",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/rbenv-1.1.2.catalina.bottle.tar.gz",
+              "sha256": "503ed6d818502f00f031b9f49461934e252b9bfba2876e90a326fc27bb1052d6"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/rbenv-1.1.2.mojave.bottle.tar.gz",
+              "sha256": "d1019098dee8d037587069398e5ad04e6d736f834dc44ae73943bec46b10b260"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/rbenv-1.1.2.high_sierra.bottle.tar.gz",
+              "sha256": "b5984102794a9d39388ca1f6ec77965aeea29b971cc00cb5af8ede8ee6c926d6"
+            },
+            "sierra": {
+              "url": "https://homebrew.bintray.com/bottles/rbenv-1.1.2.sierra.bottle.tar.gz",
+              "sha256": "873175a851e5aa4f5b3438072030b945c252f08a9a07760c64dc045e2cce4724"
+            }
+          }
+        }
+      },
+      "ruby-build": {
+        "version": "20191124",
+        "bottle": false
+      },
+      "rbenv-bundler": {
+        "version": "1.00_1",
+        "bottle": false
+      },
+      "rbenv-default-gems": {
+        "version": "1.0.0_1",
+        "bottle": false
+      },
+      "openssl": {
+        "version": "1.0.2s",
+        "bottle": null
+      },
+      "llvm": {
+        "version": "9.0.0_1",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/llvm-9.0.0_1.catalina.bottle.tar.gz",
+              "sha256": "a8e2475a1fc5a81f0da83a73d17fd54cc2a686f7b5d8e7ace9ea18885971415f"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/llvm-9.0.0_1.mojave.bottle.tar.gz",
+              "sha256": "418d1e365a59f1ef41b36e444ea72e60f381ba02083659e0375838d81443b151"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/llvm-9.0.0_1.high_sierra.bottle.tar.gz",
+              "sha256": "f9e02c2d5e6a5480e2f3f353d223acb170a9ba19fcd8d3ce38fbbc4e99a7d952"
+            }
+          }
+        }
       }
     },
     "mas": {
@@ -795,10 +857,10 @@
   "system": {
     "macos": {
       "catalina": {
-        "HOMEBREW_VERSION": "2.2.0-24-gf989295",
+        "HOMEBREW_VERSION": "2.2.0-28-g8ebfc92",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a6e8244aaec01063f603510754405425486ead1e",
-        "CLT": "",
+        "Homebrew/homebrew-core": "2627a25bd0aecd3f376d10e705aaf1c23b35c5a5",
+        "CLT": "11.2.0.0.1.1571444319",
         "Xcode": "11.2.1",
         "macOS": "10.15.1"
       }
