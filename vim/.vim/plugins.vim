@@ -3,7 +3,7 @@ if !filereadable(vundle_readme)
 	echo "Installing Vundle..."
 	echo ""
 	silent !mkdir -p $HOME/.vim/bundle
-	silent !git clone https://github.com/gmarik/Vundle.vim $HOME/.vim/bundle/Vundle.vim
+	silent !git clone https://github.com/VundleVim/Vundle.vim $HOME/.vim/bundle/Vundle.vim
 endif
 
 filetype off " required to enable filetype checking to include types from vundle managed plugins
@@ -12,7 +12,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
