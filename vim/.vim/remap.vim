@@ -30,6 +30,6 @@ nmap <Leader>gr :YcmCompleter GoToReferences<CR>
 
 " JS Dev Helpers
 nmap <Leader>rt :!ctags -R --exclude=.git --exclude=lib --exclude=node_modules . 2> /dev/null<CR>
-nmap <Leader>tt :!npm run test:unit 2> /dev/null<CR>
+nmap <Leader>tt :!npm run test:unit:base<CR>
 nmap <Leader>ti :!npm run test:integration 2> /dev/null<CR>
 nmap <Leader>ll  :!npm run lint:js:fix % 2> /dev/null<CR><CR>

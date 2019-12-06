@@ -23,7 +23,7 @@ fi
 heading 'Brew bundle'
 brew update
 brew cleanup
-env PATH=${PATH//$(pyenv root)\/shims:/} brew doctor || exit 1 # Make brew play nicely with pyenv
+brew doctor || exit 1
 brew bundle --file=~/.files/osx/Brewfile
 if [ -e ~/.files.extra/osx/Brewfile ]; then
    brew bundle --file=~/.files.extra/osx/Brewfile
