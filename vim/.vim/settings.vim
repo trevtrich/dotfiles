@@ -50,10 +50,14 @@ set incsearch                   " Highlight dynamically as pattern is typed
 set colorcolumn=120
 highlight ColorColumn ctermbg=39
 
+" Colorful JSX
+let g:vim_jsx_pretty_colorful_config = 1
+
 " Fuzzy file search
 set path=$PWD/**
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/](\.git|lib|coverage|node_modules)$',
             \ 'file': '\v(tags|\.swp)$',
             \ }
+let g:ctrlp_max_files=0
 set wildmenu
