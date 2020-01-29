@@ -26,6 +26,7 @@ nnoremap [q :cprevious<cr>
 nmap <Leader>rr :YcmCompleter RefactorRename<Space>
 nmap <Leader>gt :YcmCompleter GetType<CR>
 nmap <Leader>gd :YcmCompleter GoToDefinition<CR>
+nmap <Leader>gi :YcmCompleter GoToImplementation<CR>
 nmap <Leader>gr :YcmCompleter GoToReferences<CR>
 
 " JS Dev Helpers
