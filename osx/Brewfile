@@ -64,13 +64,12 @@ mas 'numbers', id: 409203825
 mas 'pages', id: 409201541
 
 # Utility Apps
+cask '1password'
 cask 'disk-inventory-x'
 cask 'dropbox'
 brew 'fzf'
 cask 'google-backup-and-sync'
 cask 'google-drive'
-cask 'lastpass'
-brew 'lastpass-cli'
 cask 'slack'
 cask 'spectrum'
 cask 'spotify'
