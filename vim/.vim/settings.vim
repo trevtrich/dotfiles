@@ -55,6 +55,7 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " Fuzzy file search
 set path=$PWD/**
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/](\.git|lib|coverage|node_modules)$',
             \ 'file': '\v(tags|\.swp)$',
