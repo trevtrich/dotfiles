@@ -2,7 +2,7 @@
     name = Trevor Richardson
 
 [github]
-    user = richardson-trevor
+    user = trevtrich
 
 [init]
     templatedir = ~/.git_template
