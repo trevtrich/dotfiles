@@ -3,6 +3,7 @@ tap 'homebrew/cask-fonts'
 tap 'caskroom/drivers'
 tap 'universal-ctags/universal-ctags'
 tap 'mkchoi212/fac'
+tap 'heroku/brew'
 
 # Cool System Stuff
 cask 'aerial' # Screensaver videos
@@ -45,6 +46,7 @@ cask 'docker'
 brew 'fac'
 brew 'git'
 cask 'google-cloud-sdk'
+brew 'heroku'
 brew 'hub'
 brew 'nvm'
 cask 'postman'
