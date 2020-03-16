@@ -17,8 +17,7 @@ cask 'nordvpn'
 brew 'pinentry-mac'
 brew 'gnupg'
 cask 'keybase'
-brew 'lastpass-cli', args: ['with-pinentry', 'with-doc']
-mas 'LastPass', id: 926036361
+cask '1password'
 
 # Terminal
 brew 'ack'
@@ -70,6 +69,7 @@ cask '1password'
 cask 'disk-inventory-x'
 cask 'dropbox'
 brew 'fzf'
+cask 'gimp'
 cask 'google-backup-and-sync'
 cask 'google-drive'
 cask 'slack'
