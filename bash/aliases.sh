@@ -27,6 +27,8 @@ alias killswap="find . -type f -name "*.sw[klmnop]" -delete"
 #alias ctags if you used homebrew
 alias ctags="`brew --prefix`/bin/ctags"
 
+alias grep='grep --color=auto'
+
 #shellcheck disable=SC1090
 . "$HOME/.files/osx/aliases.sh"
 

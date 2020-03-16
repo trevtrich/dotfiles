@@ -17,11 +17,6 @@ export LESS=-R
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="${YELLOW}";
 
-if grep --color "a" <<< "a" &> /dev/null; then
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto";
-fi
-
 alias colortest='( x=`tput op` y=`printf %$((${COLUMNS}-6))s`;for i in {0..256};do o=00$i;echo -e ${o:${#o}-3:3} `tput setaf $i;tput setab $i`${y// /=}$x;done; )'
 
 if tput setaf 1 &> /dev/null && [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
