@@ -57,8 +57,13 @@ let g:vim_jsx_pretty_colorful_config = 1
 set path=$PWD/**
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 let g:ctrlp_custom_ignore = {
-            \ 'dir':  '\v[\/](\.git|lib|coverage|node_modules)$',
+            \ 'dir':  '\v[\/](\.git|lib|coverage|cypress|static|node_modules)$',
             \ 'file': '\v(tags|\.swp)$',
             \ }
 let g:ctrlp_max_files=0
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 set wildmenu

@@ -15,3 +15,7 @@ export NVM_DIR=`realpath ~/.files/nvm/.nvm`
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
+
+# Use silver searcher fzf
+export FZF_DEFAULT_COMMAND='ag -l --hidden -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
