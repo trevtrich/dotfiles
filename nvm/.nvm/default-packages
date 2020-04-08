@@ -1,6 +1,9 @@
+@gaincompliance/cli
+
+avn
+commitizen
 plop
 updtr
-commitizen
 
 # System
 fkill-cli
