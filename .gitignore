@@ -1,4 +1,6 @@
 vim/.vim/bundle
+vim/.vim/plugged
+vim/.vim/autoload
 **/.netrwhist
 .idea
 .apm

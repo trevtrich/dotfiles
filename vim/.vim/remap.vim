@@ -23,11 +23,10 @@ nnoremap ]q :cnext<cr>
 nnoremap [q :cprevious<cr>
 
 " General dev helpers
-nmap <Leader>rr :YcmCompleter RefactorRename<Space>
-nmap <Leader>gt :YcmCompleter GetType<CR>
-nmap <Leader>gd :YcmCompleter GoToDefinition<CR>
-nmap <Leader>gi :YcmCompleter GoToImplementation<CR>
-nmap <Leader>gr :YcmCompleter GoToReferences<CR>
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)"
 
 " JS Dev Helpers
 nmap <Leader>rt :!ctags -R --exclude=.git --exclude=lib --exclude=node_modules . 2> /dev/null<CR>
