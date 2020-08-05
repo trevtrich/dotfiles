@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'VundleVim/Vundle.vim'
 
 Plug 'joshdick/onedark.vim'
+Plug 'arzg/vim-colors-xcode'
 Plug 'tpope/vim-fugitive'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'pangloss/vim-javascript'

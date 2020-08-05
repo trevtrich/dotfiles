@@ -23,6 +23,7 @@ nnoremap ]q :cnext<cr>
 nnoremap [q :cprevious<cr>
 
 " General dev helpers
+nmap <silent> rr <Plug>(coc-rename)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
