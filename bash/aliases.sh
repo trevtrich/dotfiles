@@ -29,6 +29,8 @@ alias ctags="`brew --prefix`/bin/ctags"
 
 alias grep='grep --color=auto'
 
+alias gs='function _grepSource(){ grep --color=auto -r -i --line-number --exclude=*-test.js --exclude=*.swo --exclude=*.swp "$@" src; };_grepSource'
+
 #shellcheck disable=SC1090
 . "$HOME/.files/osx/aliases.sh"
 
