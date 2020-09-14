@@ -11,8 +11,6 @@ PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/gpg-agent/bin:$(brew --prefix
 M2_HOME=$(brew --prefix maven)/libexec
 M2="${M2_HOME}/bin"
 
-export NVM_DIR=`realpath ~/.files/nvm/.nvm`
-
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
