@@ -9,6 +9,8 @@ function git-clone-cd() {
     git clone $1 && cd "$(basename $1 .git)"
 }
 
+alias gc='git clone-cd'
+
 # GitHub URL for current repo.
 function github_url() {
     local user_repo
