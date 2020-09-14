@@ -4,6 +4,15 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let g:coc_global_extensions = [
+\ 'coc-json',
+\ 'coc-tsserver',
+\ 'coc-html',
+\ 'coc-css',
+\ 'coc-yaml',
+\ 'coc-highlight'
+\ ]
+
 call plug#begin('~/.vim/plugged')
 
 " let Vundle manage Vundle, required
@@ -20,7 +29,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-surround'
 "Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() } }
 
 if filereadable("~/.files.extra/vim/.vim/plugins.vim")
   source ~/.files.extra/vim/.vim/plugins.vim
