@@ -1,5 +1,6 @@
 {
     "python": {
-        "jediEnabled": false
+        "jediEnabled": true,
+        "jediPath": "/usr/local/lib/python3.8/site-packages"
     }
 }
