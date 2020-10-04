@@ -69,7 +69,6 @@ mas 'pages', id: 409201541
 cask '1password'
 cask 'balenaetcher'
 cask 'disk-inventory-x'
-cask 'dropbox'
 brew 'fzf'
 cask 'gimp'
 cask 'google-backup-and-sync'
