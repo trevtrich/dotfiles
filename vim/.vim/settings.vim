@@ -14,6 +14,7 @@ set ruler
 set visualbell
 set showcmd
 set relativenumber
+set splitright
 
 "let g:netrw_liststyle=3 " Display a tree by default (switcher using `i` in netrw)
 let g:netrw_banner=0 " Get rid of the banner on top
