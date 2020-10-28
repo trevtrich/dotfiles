@@ -2,6 +2,7 @@
 
 export FORCE_COLOR=1
 export NPM_CONFIG_COLOR=always
+export BASH_SILENCE_DEPRECATION_WARNING=1
 
 . ~/.files/bash/source.sh
 
