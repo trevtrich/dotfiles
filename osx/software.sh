@@ -21,9 +21,13 @@ if [[ ! "$(type -P brew)" ]]; then
 fi
 
 heading 'Brew bundle'
+# https://github.com/pyenv/pyenv/issues/106
+function pybrew {
+    env PATH=${PATH//$(pyenv root)\/shims:/} brew $1
+}
 brew update
 brew cleanup
-brew doctor || exit 1
+pybrew doctor || exit 1
 brew bundle --file=~/.files/osx/Brewfile
 if [ -e ~/.files.extra/osx/Brewfile ]; then
    brew bundle --file=~/.files.extra/osx/Brewfile
