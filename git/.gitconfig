@@ -5,6 +5,7 @@
     user = trevtrich
 
 [init]
+    defaultBranch = main
     templatedir = ~/.git_template
 
 [commit]

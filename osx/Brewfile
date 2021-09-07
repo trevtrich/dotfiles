@@ -37,7 +37,7 @@ brew 'unar'
 brew 'vim'
 
 # Development
-cask 'atom'
+cask 'bbedit'
 cask 'ccmenu'
 brew 'cmake'
 brew 'docker'
@@ -56,6 +56,7 @@ brew 'pipenv'
 brew 'tig'
 brew 'tmate'
 brew 'tmux'
+cask 'visual-studio-code'
 brew 'universal-ctags', args: ['HEAD']
 
 cask 'google-chrome'
