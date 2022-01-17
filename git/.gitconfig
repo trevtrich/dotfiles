@@ -13,7 +13,7 @@
 
 [diff]
     renames = copy
-    tool = p4mergetool
+    tool = vimdiff
     indentHeuristic = true
 
 [merge]

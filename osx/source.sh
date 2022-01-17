@@ -11,3 +11,5 @@ export NVM_DIR="$(realpath $HOME/.nvm)"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 [[ -s ~/.avn/bin/avn.sh ]] && source ~/.avn/bin/avn.sh
+
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

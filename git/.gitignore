@@ -15,6 +15,10 @@ tags
 *.swn
 *.swm
 .vimlocal
+.vim
+.yalc/
+yalc.lock
 .ackrc
+.data
 compile_commands.json
 jsconfig.json

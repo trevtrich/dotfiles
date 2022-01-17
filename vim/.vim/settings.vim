@@ -6,7 +6,8 @@ set updatetime=100
 autocmd BufLeave,FocusLost * silent! wall " Save buffer on focus lost or change buffers
 set autowrite
 set autoread
-colorscheme molokai
+"colorscheme molokai
+colorscheme onedark
 set guifont=Source\ Code\ Pro
 set autoindent
 set nowrap
