@@ -8,6 +8,7 @@ set selection=inclusive
 
 # Window
 map <C-t> :action ActivateRunToolWindow<CR>
+map <C-w>q :action CloseEditor<CR>
 
 # Git
 nmap <leader>hu :action Vcs.RollbackChangedLines<CR>
@@ -16,8 +17,8 @@ nmap <leader>gb :action Annotate<CR>
 # Refactor
 nmap <leader>rr :action RenameElement<CR>
 nmap <leader>cs :action ChangeSignature<CR>
-nmap <leader>ev :action IntroduceVariable<CR>
-nmap <leader>em :action ExtractMethod<CR>
+vmap <leader>ev :action IntroduceVariable<CR>
+vmap <leader>em :action ExtractMethod<CR>
 
 # Testing
 nmap <leader>tt :action Run<CR>
