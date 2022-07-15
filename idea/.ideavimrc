@@ -31,3 +31,7 @@ nmap <leader>gd :action GotoDeclaration<CR>
 nmap <leader>gi :action GotoImplementation<CR>
 nmap <leader>ff :action GotoFile<CR>
 nmap <leader>sg :action FindInPath<CR>
+map <C-o> <Action>(Back)
+map <C-i> <Action>(Forward)
+map ]c <Action>(VcsShowNextChangeMarker)
+map [c <Action>(VcsShowPrevChangeMarker)
