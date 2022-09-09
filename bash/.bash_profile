@@ -9,3 +9,4 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 if [ -e ~/.files.extra/bash/source.sh ]; then
     . ~/.files.extra/bash/source.sh
 fi
+eval "$(/opt/homebrew/bin/brew shellenv)"
