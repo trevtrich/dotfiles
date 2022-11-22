@@ -6,7 +6,7 @@ function git-current-branch-sha() {
 }
 
 function git-clone-cd() {
-    git clone $1 && cd "$(basename $1 .git)"
+    gh repo clone $1 && cd "$(basename $1 .git)"
 }
 
 alias gc='git-clone-cd'

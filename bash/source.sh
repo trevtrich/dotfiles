@@ -15,8 +15,6 @@
 #shellcheck disable=SC1090
 . ~/.files/git/functions.sh
 #shellcheck disable=SC1090
-. ~/.files/ruby/rbenv-init.sh
-#shellcheck disable=SC1090
 . ~/.files/python/python-init.sh
 
 #shellcheck disable=SC1090

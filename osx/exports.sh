@@ -3,17 +3,17 @@
 # OSX-only stuff. Abort if not OSX.
 [[ "$OSTYPE" == darwin* ]] || return 1
 
-export PATH
-export M2_HOME
-export M2
-
-PATH=/usr/local/bin:/usr/local/sbin:/usr/local/opt/gpg-agent/bin:$(brew --prefix python)/libexec/bin:$(brew --prefix ruby)/bin:~/.local/bin:$PATH
-M2_HOME=$(brew --prefix maven)/libexec
-M2="${M2_HOME}/bin"
-
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 export HOMEBREW_CASK_OPTS="--appdir=/Applications";
 
-# Use silver searcher fzf
-export FZF_DEFAULT_COMMAND='ag -l --hidden -g ""'
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export LDFLAGS="-L/opt/homebrew/opt/openssl@3/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openssl@3/include"
+
+export GRPC_PYTHON_BUILD_SYSTEM_ZLIB=true
+export GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=true
+
+export GOOGLE_APPLICATION_CREDENTIALS=~/gain-data.json
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
