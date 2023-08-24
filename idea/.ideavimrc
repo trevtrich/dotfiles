@@ -9,6 +9,7 @@ set selection=inclusive
 # Window
 map <C-t> :action ActivateRunToolWindow<CR>
 map <C-w>q :action CloseEditor<CR>
+map <leader>to :action CloseAllEditorsButActive<CR>
 
 # Git
 nmap <leader>hu :action Vcs.RollbackChangedLines<CR>

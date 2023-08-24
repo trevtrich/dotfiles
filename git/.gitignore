@@ -22,3 +22,5 @@ yalc.lock
 .data
 compile_commands.json
 jsconfig.json
+.python-version
+__pycache__
