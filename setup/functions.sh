@@ -101,22 +101,3 @@ link_gitconfig_for_os() {
     [[ "$OSTYPE" == darwin* ]] || return 1
     link_file ~/.files/osx/gitconfig.osx ~/.gitconfig.os
 }
-
-link_maven_extensions() {
-    local source;
-    local extension;
-
-    if [[ -z $M2_HOME ]]; then
-        warn "M2_HOME environment variable not set"
-    elif [[ ! -d $M2_HOME ]]; then
-        warn "$M2_HOME does not exist"
-    else
-        find "${DOTFILES_LINK}/maven/extensions" -mindepth 1 -maxdepth 1 > tmp
-        while IFS= read -r source
-        do
-            extension=$(basename "${source}")
-            link_file "${source}" "$M2_HOME/lib/ext/${extension}"
-        done < tmp
-        rm tmp
-    fi
-}
