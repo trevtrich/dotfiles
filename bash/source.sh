@@ -22,5 +22,3 @@
 
 #shellcheck disable=SC1090
 . ~/.files/osx/source.sh
-#shellcheck disable=SC1090
-. ~/.files/windows/source.sh
