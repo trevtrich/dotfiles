@@ -13,11 +13,11 @@ sudo -v
 ###############################################################################
 
 # Change the default shell to bash v4
-if [ -e '/usr/local/bin/bash' ] && ! grep '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
-  info 'Default shell changed to bash'
-fi;
+#if [ -e '/usr/local/bin/bash' ] && ! grep '/usr/local/bin/bash' /etc/shells; then
+#  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
+#  chsh -s /usr/local/bin/bash;
+#  info 'Default shell changed to bash'
+#fi;
 
 ###############################################################################
 # General UI/UX                                                               #

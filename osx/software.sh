@@ -34,6 +34,14 @@ fi
 brew upgrade
 brew cleanup
 
+# Install ohmyzsh.
+if [ -d ~/.oh-my-zsh ]; then
+	echo "oh-my-zsh is already installed"
+ else
+    heading "Installing ohmyzsh"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi
+
 if [[ ! -d ~/.nvm ]]; then
     heading "Finishing nvm configuration"
 

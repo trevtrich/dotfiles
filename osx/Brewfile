@@ -1,6 +1,4 @@
-tap 'homebrew/cask'
 tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-drivers'
 tap 'universal-ctags/universal-ctags'
 tap 'heroku/brew'
 tap 'espanso/espanso'
