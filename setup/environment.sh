@@ -11,4 +11,5 @@ if [ ! -d ~/bin ]; then
 fi
 
 . ../osx/environment.sh
+. ../linux/environment.sh
 . ../windows/environment.sh

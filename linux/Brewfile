@@ -1,36 +1,15 @@
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-
-# Security
-# brew 'gnupg' # not working on linux
-# brew 'lastpass-cli' # not working on linux
-
 # Terminal
 brew 'ack'
-brew 'bash'
-brew 'bash-completion'
 brew 'bat'
-brew 'coreutils'
-brew 'dos2unix'
-brew 'fzy'
 brew 'jq'
-brew 'readline'
-brew 'tldr'
-brew 'pyenv'
-# brew 'unar' # not working on linux
 brew 'vim'
 
 # Development
-# brew 'fac' # not working on linux
 brew 'git'
 brew 'hub'
 brew 'nvm'
-# brew 'reattach-to-user-namespace' # Not working on linux
-brew 'tig'
+#brew 'pyenv'
 brew 'tmux'
-# brew 'universal-ctags', args: ['HEAD'] # Not working on linux
 
 # Utility Apps
-brew 'fzf'
-brew 'task'
 brew 'tree'
