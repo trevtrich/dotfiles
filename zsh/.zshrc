@@ -15,5 +15,6 @@ if [ -e ~/.files.extra/zsh/source.sh ]; then
     . ~/.files.extra/zsh/source.sh
 fi
 
+. ~/.files/zsh/input.sh
 . ~/.files/zsh/colors.sh
 . ~/.files/zsh/prompt.sh
