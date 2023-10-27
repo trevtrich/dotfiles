@@ -53,7 +53,7 @@ function prompt_virtualenv() {
 function prompt_exitcode() {
   local exitcode_color="${RED}"
 
-  [[ $1 != 0 ]] && echo " ${exitcode_color}$1\[${RESET}\]"
+  [[ $1 != 0 ]] && echo " ${exitcode_color}$1${RESET}"
 }
 
 function prompt_command() {
@@ -73,12 +73,8 @@ function prompt_command() {
   PS1="$PS1${bracket_color}[${prompt_color}$(basename $(dirname "$PWD"))/$(basename "$PWD")${prompt_color}${bracket_color}]${RESET}"
   PS1="$PS1$(prompt_virtualenv)"
 
-  #PS1="$PS1\n"
-  # date: [HH:MM:SS]
-  #PS1="$PS1$bracket_color[$(date +"$prompt_color%H$colon_color:$prompt_color%M$colon_color:$prompt_color%S")$bracket_color]\[${RESET}\]"
   # exit code: 127
-  PS1="$PS1$(prompt_exitcode "$exit_code")"
-  PS1="$PS1${NEWLINE}\$ "
+  PS1="$PS1${NEWLINE}$(prompt_exitcode "$exit_code")\$ "
 }
 
 precmd() { prompt_command }
