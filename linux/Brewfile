@@ -8,7 +8,7 @@ brew 'vim'
 brew 'git'
 brew 'hub'
 brew 'nvm'
-#brew 'pyenv'
+brew 'pyenv'
 brew 'tmux'
 
 # Utility Apps

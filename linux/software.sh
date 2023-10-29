@@ -40,3 +40,11 @@ heading "Setting up apt packages"
 sudo apt -y install gnupg2 gnupg-agent pinentry-gnome3
 sudo apt install xclip
 
+
+if [[ ! -d ~/.nvm ]]; then
+    heading "Finishing nvm configuration"
+
+    mkdir ~/.nvm
+    cp "$(brew --prefix nvm)/nvm-exec" ~/.nvm/
+    link_file "$(brew --prefix nvm)/nvm.sh" ~/.nvm/nvm.sh
+fi
