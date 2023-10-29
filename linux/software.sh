@@ -26,7 +26,7 @@ if [[ ! "$(type -P brew)" ]]; then
     echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.zshrc
 fi
 
-heading 'Brew bundle'
+heading 'Running homebrew'
 brew update
 brew cleanup
 brew doctor || exit 1
@@ -35,3 +35,8 @@ brew bundle --file=~/.files/linux/Brewfile
 
 brew upgrade
 brew cleanup
+
+heading "Setting up apt packages"
+sudo apt -y install gnupg2 gnupg-agent pinentry-gnome3
+sudo apt install xclip
+
