@@ -20,7 +20,7 @@ from scratch as well as keep it up-to-date over time.
 
 #### Linux
 
-* in order to use homebrew, install [the homebrew recommended](https://docs.brew.sh/Homebrew-on-Linux#requirements) package:
+* in order to use homebrew, install [the homebrew recommended packages](https://docs.brew.sh/Homebrew-on-Linux#requirements):
   * `sudo apt-get install build-essential procps curl file git`
 
 
