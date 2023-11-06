@@ -7,8 +7,8 @@ My disaster recovery plan.
 
 ## Purpose
 
-This repository contains most of my base configuration for bash shells, but is
-primarily focused on OSX. These files make it simple to configure a new machine
+This repository contains most of my base configuration, but is
+primarily focused on OSX and linux. These files make it simple to configure a new machine
 from scratch as well as keep it up-to-date over time.
 
 ## Installation
@@ -18,10 +18,16 @@ from scratch as well as keep it up-to-date over time.
 * `git` must be installed
 * `bash` should be configured as the preferred shell
 
+#### Linux
+
+* in order to use homebrew, install [the homebrew recommended](https://docs.brew.sh/Homebrew-on-Linux#requirements) package:
+  * `sudo apt-get install build-essential procps curl file git`
+
+
 ### Command
 
 ```sh
-git clone https://github.com/travi/dotfiles.git && cd dotfiles/setup/ && source init.sh
+git clone https://github.com/trevtrich/dotfiles.git && cd dotfiles/setup/ && source init.sh
 ```
 
 ## What does it do?
@@ -61,6 +67,12 @@ git clone https://github.com/travi/dotfiles.git && cd dotfiles/setup/ && source 
 * Installs the applications defined in:
   * `~/.dotfiles/osx/Brewfile`
   * `~/.dotfiles.extra/osx/Brewfile`
+
+##### Linux Software
+
+* Installs [Homebrew](http://brew.sh/)
+* Installs the applications defined in:
+  * `~/.dotfiles/linux/Brewfile`
 
 ## Supported Environments
 
