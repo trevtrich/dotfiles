@@ -37,8 +37,17 @@ brew upgrade
 brew cleanup
 
 heading "Setting up apt packages"
+
+## Gettin the system functional with my tools
 sudo apt -y install gnupg2 gnupg-agent pinentry-gnome3
 sudo apt install xclip
+
+# Allows app-image. see [Can't run an AppImage on Ubuntu 20.04](https://askubuntu.com/questions/1363783/cant-run-an-appimage-on-ubuntu-20-04)
+# i needed this for jetbrains toolbox
+sudo apt install libfuse2
+
+## Development
+sudo apt install elixir
 
 
 if [[ ! -d ~/.nvm ]]; then

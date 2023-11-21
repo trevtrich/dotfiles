@@ -73,6 +73,8 @@ git clone https://github.com/trevtrich/dotfiles.git && cd dotfiles/setup/ && sou
 * Installs [Homebrew](http://brew.sh/)
 * Installs the applications defined in:
   * `~/.dotfiles/linux/Brewfile`
+* Installs some useful Debian packages through `apt-get`
+  * To get ergodox software working, use [this website](https://github.com/zsa/wally/wiki/Linux-install)
 
 ## Supported Environments
 
