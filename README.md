@@ -16,7 +16,8 @@ from scratch as well as keep it up-to-date over time.
 ### Prerequisites
 
 * `git` must be installed
-* `bash` should be configured as the preferred shell
+* Homebrew is installed
+* pyenv is installed from homebrew
 
 #### Linux
 
