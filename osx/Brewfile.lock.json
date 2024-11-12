@@ -139,7 +139,7 @@
         }
       },
       "google-drive": {
-        "version": "99.0",
+        "version": "100.0",
         "options": {
           "full_name": "google-drive"
         }
@@ -331,7 +331,7 @@
         }
       },
       "mimestream": {
-        "version": "1.4.1",
+        "version": "1.4.2",
         "options": {
           "full_name": "mimestream"
         }
@@ -340,6 +340,12 @@
         "version": "124.5.5",
         "options": {
           "full_name": "figma"
+        }
+      },
+      "logi-options+": {
+        "version": "1.84.641293",
+        "options": {
+          "full_name": "logi-options+"
         }
       }
     },
@@ -2262,7 +2268,7 @@
         "macOS": "13.5.2"
       },
       "sequoia": {
-        "HOMEBREW_VERSION": "4.4.4",
+        "HOMEBREW_VERSION": "4.4.5",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "16.1.0.0.1.1729049160",

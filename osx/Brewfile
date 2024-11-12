@@ -78,7 +78,7 @@ cask 'elgato-stream-deck'
 cask 'espanso'
 brew 'fzf'
 cask 'google-drive'
-# cask 'logitech-control-center' # doesn't exist??
+cask 'logi-options+'
 cask 'maccy'
 cask 'mimestream'
 cask 'miro'
