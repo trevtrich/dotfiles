@@ -14,3 +14,4 @@ zle-line-init() {
 zle -N zle-line-init
 
 bindkey -M viins 'jk' vi-cmd-mode
+bindkey -M viins '^?' backward-delete-char
