@@ -58,6 +58,34 @@ let g:vim_jsx_pretty_colorful_config = 1
 " Coc Settings
 let g:coc_disable_transparent_cursor = 1
 
+" Cursor settings for different modes
+set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+  \,sm:block-blinkwait175-blinkoff150-blinkon175
+
+" Terminal cursor shape support
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>[6 q\<Esc>\\"  " Insert mode - line cursor
+  let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>[4 q\<Esc>\\"  " Replace mode - underline cursor
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>[2 q\<Esc>\\"  " Normal mode - block cursor
+else
+  let &t_SI = "\<Esc>[6 q"  " Insert mode - line cursor
+  let &t_SR = "\<Esc>[4 q"  " Replace mode - underline cursor
+  let &t_EI = "\<Esc>[2 q"  " Normal mode - block cursor
+endif
+
+" Reset cursor to block on startup and when leaving vim
+augroup ResetCursorShape
+  autocmd!
+  if exists('$TMUX')
+    autocmd VimEnter * silent! execute "!echo -ne '\\ePtmux;\\e\\e[2 q\\e\\\\'"
+    autocmd VimLeave * silent! execute "!echo -ne '\\ePtmux;\\e\\e[2 q\\e\\\\'"
+  else
+    autocmd VimEnter * silent! execute "!echo -ne '\\e[2 q'"
+    autocmd VimLeave * silent! execute "!echo -ne '\\e[2 q'"
+  endif
+augroup END
+
 " Fuzzy file search
 set path=$PWD/**
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'

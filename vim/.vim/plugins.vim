@@ -11,7 +11,6 @@ let g:coc_global_extensions = [
 \ 'coc-html',
 \ 'coc-css',
 \ 'coc-yaml',
-\ 'coc-elixir',
 \ 'coc-highlight'
 \ ]
 
@@ -30,8 +29,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'mileszs/ack.vim'
 Plug 'airblade/vim-gitgutter'
 "Plug 'tpope/vim-surround'
-"Plug 'ycm-core/YouCompleteMe'
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() } }
+Plug 'github/copilot.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 if filereadable("~/.files.extra/vim/.vim/plugins.vim")
   source ~/.files.extra/vim/.vim/plugins.vim

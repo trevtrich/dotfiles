@@ -27,20 +27,12 @@ heading 'Brew bundle'
 brew update
 brew cleanup
 brew doctor || exit 1
-brew bundle --file=~/.files/osx/Brewfile
+brew bundle --verbose --file=~/.files/osx/Brewfile
 if [ -e ~/.files.extra/osx/Brewfile ]; then
    brew bundle --file=~/.files.extra/osx/Brewfile
 fi
 brew upgrade
 brew cleanup
-
-# Install ohmyzsh.
-if [ -d ~/.oh-my-zsh ]; then
-	echo "oh-my-zsh is already installed"
- else
-    heading "Installing ohmyzsh"
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-fi
 
 if [[ ! -d ~/.nvm ]]; then
     heading "Finishing nvm configuration"

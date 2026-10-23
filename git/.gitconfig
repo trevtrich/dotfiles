@@ -1,6 +1,7 @@
 [user]
     name = Trevor Richardson
-    email = richardson.trev@gmail.com
+	email = trevor@getclaimable.com
+	signingkey = CBEDB246266D4DD0
 
 [github]
     user = trevtrich
@@ -21,7 +22,7 @@
     tool = p4mergetool
 
 [pull]
-    rebase = true
+    rebase = false
 
 [rerere]
     enabled = true
@@ -53,9 +54,6 @@
     trustctime = false
 
 [push]
-    # Git 1.x default to work on legacy machines (pre-v1.8)
-    # use `simple` in .gitconfig.extra on machines with newer git installed
-    default = matching
     followTags = true
 
 [branch]
@@ -66,13 +64,13 @@
     cm = commit
 
     # Delete Merged
-    dm = !git co master && git rom && git branch --merged origin/master | grep -v master | xargs -n 1 git branch -d
+    dm = !git co main && git rom && git branch --merged origin/main | grep -v main | xargs -n 1 git branch -d
 
     co = checkout
     hist = log -n 10 --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
     histl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
-    pom = pull origin master
-    rom = !git fetch origin && git rebase origin/master
+    pom = pull origin main
+    rom = !git fetch origin && git rebase origin/main
     st = status
     wipe = !git add -A && git commit -qnm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     amend = commit -a --amend --no-edit
@@ -90,3 +88,13 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[coderabbit]
+	machineId = cli/c4024bb0ce204773a6d8fa351374e2b9
+[url "https://github.com/"]
+	insteadOf = git@github.com:
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

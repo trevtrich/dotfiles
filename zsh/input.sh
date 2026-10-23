@@ -3,7 +3,7 @@ function zle-keymap-select {
   if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then
     echo -ne '\e[1 q'  # Block cursor in normal mode
   elif [[ ${KEYMAP} == main ]] || [[ ${KEYMAP} == viins ]] || [[ ${KEYMAP} = '' ]] || [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'  # Beam cursor in insert mode
+    echo -ne '\e[6 q'  # Line cursor in insert mode
   fi
 }
 zle -N zle-keymap-select

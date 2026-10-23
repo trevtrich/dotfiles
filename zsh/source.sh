@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 #shellcheck disable=SC1090
 . ~/.files/zsh/colors.sh

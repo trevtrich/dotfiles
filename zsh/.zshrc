@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 export SHELL=/bin/zsh
 
@@ -18,3 +18,8 @@ fi
 . ~/.files/zsh/input.sh
 . ~/.files/zsh/colors.sh
 . ~/.files/zsh/prompt.sh
+
+
+
+# Added by Antigravity
+export PATH="/Users/trevorr/.antigravity/antigravity/bin:$PATH"

@@ -1,21 +1,20 @@
-# tap 'homebrew/cask-fonts'
-# tap 'universal-ctags/universal-ctags'
-# tap 'heroku/brew'
-tap 'espanso/espanso'
+tap 'atlassian/homebrew-acli'
+
 
 # Cool System Stuff
-cask 'aerial' # Screensaver videos
+#cask 'aerial' # Screensaver videos
 
 # Fonts
 brew 'svn'
 cask 'font-source-code-pro'
 
 # Security
-cask 'nordvpn'
-brew 'pinentry-mac'
+cask '1password'
 brew 'gnupg'
 cask 'keybase'
-cask '1password'
+cask 'nordvpn'
+brew 'pinentry-mac'
+cask 'tailscale-app'
 
 # Terminal
 brew 'ack'
@@ -33,17 +32,20 @@ brew 'reattach-to-user-namespace'
 brew 'ruby-build'
 brew 'rbenv-default-gems'
 brew 'the_silver_searcher'
-brew 'tldr'
 brew 'unar'
 brew 'vim'
 
 # Development
+brew 'aws-sam-cli'
 cask 'bbedit'
 cask 'ccmenu'
+cask 'claude-code'
 brew 'cmake'
-cask 'docker'
-brew 'docker-machine'
+cask 'docker-desktop'
+brew 'colima' # other type of docker-machine
+# brew 'docker-machine'
 cask 'figma'
+brew 'gemini-cli'
 brew 'gh'
 brew 'git'
 brew 'git-lfs'
@@ -51,14 +53,18 @@ brew 'hub'
 cask 'intellij-idea'
 brew 'nvm'
 brew 'yarn'
+cask 'pgadmin4'
 cask 'postman'
 cask 'proxyman'
 brew 'pyenv'
 brew 'pipenv'
 brew 'redis'
+brew 'stripe-cli'
+cask 'superset'
 brew 'tig'
 brew 'tmux'
 cask 'visual-studio-code'
+cask 'zed'
 
 cask 'google-chrome'
 cask 'firefox'
@@ -70,19 +76,22 @@ mas 'pages', id: 409201541
 
 # Utility Apps
 cask 'alt-tab'
+brew 'acli'
+cask 'bambu-studio'
+cask 'claude'
 cask 'cleanshot'
 cask 'discord'
-cask 'disk-inventory-x'
 cask 'elgato-control-center'
 cask 'elgato-stream-deck'
-cask 'espanso'
 brew 'fzf'
+cask 'gather'
 cask 'google-drive'
 cask 'logi-options+'
 cask 'maccy'
 cask 'mimestream'
 cask 'miro'
 cask 'notion'
+cask 'obsidian'
 cask 'rectangle'
 cask 'signal'
 cask 'slack'

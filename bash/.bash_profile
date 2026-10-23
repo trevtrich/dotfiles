@@ -12,3 +12,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 if [ -e ~/.files.extra/bash/source.sh ]; then
     . ~/.files.extra/bash/source.sh
 fi
+. "$HOME/.cargo/env"

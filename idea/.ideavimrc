@@ -6,6 +6,8 @@ set ignorecase
 # Fix for bug that was introduced in v0.50 with selection jumping to previous lines
 set selection=inclusive
 
+set relativenumber
+
 # Window
 map <C-t> :action ActivateRunToolWindow<CR>
 map <C-w>q :action CloseEditor<CR>

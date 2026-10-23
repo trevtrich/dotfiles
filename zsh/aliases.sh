@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 alias ll="ls -al"
 alias reload='exec -l $SHELL'
