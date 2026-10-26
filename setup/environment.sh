@@ -12,4 +12,3 @@ fi
 
 . ../osx/environment.sh
 . ../linux/environment.sh
-. ../windows/environment.sh

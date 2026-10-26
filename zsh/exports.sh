@@ -4,6 +4,8 @@
 . ~/.files/osx/exports.sh
 . ~/.files/linux/exports.sh
 
+export PATH="$HOME/bin:$PATH"
+
 # Make vim the default editor
 export EDITOR="vim";
 

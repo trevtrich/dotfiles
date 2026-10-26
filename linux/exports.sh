@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# Linux-only stuff. Abort if not Linux.
+[[ "$OSTYPE" == linux-* ]] || return 1
+
 export NVM_DIR="$HOME/.nvm"
 
 # Lazy-load nvm - only initialize when node/npm/nvm commands are used
@@ -32,6 +37,4 @@ if [ -s "$(brew --prefix 2>/dev/null)/opt/nvm/nvm.sh" ]; then
     npx "$@"
   }
 fi
-
-export PATH="$HOME/bin:$PATH"
 

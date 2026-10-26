@@ -56,21 +56,21 @@
 [push]
     followTags = true
 
-[branch]
-    autorebase = always
-
 [alias]
     br = branch
     cm = commit
 
+    # Default branch of origin (main, master, ...); falls back to main if origin/HEAD is unset
+    db = !git symbolic-ref --short refs/remotes/origin/HEAD 2>/dev/null | sed 's@^origin/@@' | grep . || echo main
+
     # Delete Merged
-    dm = !git co main && git rom && git branch --merged origin/main | grep -v main | xargs -n 1 git branch -d
+    dm = !b=$(git db) && git co $b && git rom && git branch --merged origin/$b | grep -vx \"[* ] $b\" | xargs -n 1 git branch -d
 
     co = checkout
     hist = log -n 10 --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
     histl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)'
-    pom = pull origin main
-    rom = !git fetch origin && git rebase origin/main
+    pom = !git pull origin $(git db)
+    rom = !git fetch origin && git rebase origin/$(git db)
     st = status
     wipe = !git add -A && git commit -qnm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     amend = commit -a --amend --no-edit
