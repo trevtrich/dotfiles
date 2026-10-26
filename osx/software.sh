@@ -26,7 +26,7 @@ fi
 heading 'Brew bundle'
 brew update
 brew cleanup
-brew doctor || exit 1
+brew doctor || warn "brew doctor reported issues; continuing anyway"
 brew bundle --verbose --file=~/.files/osx/Brewfile
 if [ -e ~/.files.extra/osx/Brewfile ]; then
    brew bundle --file=~/.files.extra/osx/Brewfile

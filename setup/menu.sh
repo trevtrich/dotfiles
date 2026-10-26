@@ -1,17 +1,16 @@
-#!/bin/bash
+#!/bin/zsh
 
-shopt -s expand_aliases
 . ../bash/aliases.sh
 
 choice=$1
 
 if [[ -z $choice ]]; then
     heading "Which setup step(s) would you like to perform?"
-    echo -e "\t1: Environment Configuration"
-    echo -e "\t2: Software Installation/Update"
-    echo -e "\t3: Both"
+    printf "\t1: Environment Configuration\n"
+    printf "\t2: Software Installation/Update\n"
+    printf "\t3: Both\n"
 
-    echo -en "\nPlease enter your choice: "
+    printf "\nPlease enter your choice: "
     read -r choice
 fi
 

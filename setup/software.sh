@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     /bin/bash ../linux/software.sh || return 1

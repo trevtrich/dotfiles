@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 DOTFILES_ROOT="$(pwd)/../"
 DOTFILES_LINK="$HOME/.files"
@@ -30,12 +30,12 @@ fail() {
 windows() { [[ -n "$WINDIR" ]]; }
 
 is_symbolic_link() {
-    local path=$1
+    local link_path=$1
 
     if windows; then
-        fsutil reparsepoint query "${path}" > /dev/null
+        fsutil reparsepoint query "${link_path}" > /dev/null
     else
-        [[ -h ${path} ]]
+        [[ -h ${link_path} ]]
     fi
 }
 
