@@ -43,7 +43,7 @@ brew 'cmake'
 cask 'docker-desktop'
 brew 'colima' # other type of docker-machine
 # brew 'docker-machine'
-brew 'gemini-cli'
+cask 'antigravity-cli'
 brew 'gh'
 brew 'git'
 brew 'git-lfs'
