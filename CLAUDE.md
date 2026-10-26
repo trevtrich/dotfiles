@@ -68,5 +68,5 @@ cd setup && source init.sh     # interactive menu; or: source menu.sh <1|2|3>
 
 - Shell scripts start with a `#!/bin/zsh` (zsh/setup) or `#!/bin/bash` shebang, use 4-space indentation, and put `#shellcheck disable=SC1090` before dynamic `.` sources. Use `heading`/`info`/`success`/`warn`/`fail` from `setup/functions.sh` for setup output.
 - To verify an edit: run `zsh -n <file>` for syntax, `zsh -i -c exit` to confirm a clean interactive startup, and `shellcheck <file>` if it's installed. Changes take effect after `reload` (`exec -l $SHELL`).
-- Commits use Conventional Commits with an optional scope: `fix:`, `chore:`, `feat(tmux):`, `perf:`. Commits are GPG-signed (`commit.gpgsign = true`). This repo's default branch is **`master`**. The `.gitconfig` aliases `rom`, `dm`, and `pom` find the default branch through `git db` (origin/HEAD), so they work with both `main` and `master`.
+- Commits use Conventional Commits with an optional scope: `fix:`, `chore:`, `feat(tmux):`, `perf:`. Commits are GPG-signed (`commit.gpgsign = true`). This repo's default branch is **`main`** (renamed from `master` in Oct 2026). The `.gitconfig` aliases `rom`, `dm`, and `pom` find the default branch through `git db` (origin/HEAD), so they work with both `main` and `master`.
 - Integrate branches with merge, not rebase (user preference, and `pull.rebase = false`).
