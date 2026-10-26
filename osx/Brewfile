@@ -65,9 +65,9 @@ cask 'google-chrome'
 cask 'firefox'
 
 # Text Editing
-mas 'keynote', id: 409183694
-mas 'numbers', id: 409203825
-mas 'pages', id: 409201541
+mas 'keynote', id: 361285480
+mas 'numbers', id: 361304891
+mas 'pages', id: 361309726
 
 # Utility Apps
 cask 'alt-tab'
